@@ -1,0 +1,15 @@
+.cache
+elpa
+auto-save-list
+eshell
+el-get
+custom.el
+node_modules
+*.elc
+ido.last
+url/
+network-security.data
+%backup%~
+emms/
+games/
+projectile-bookmarks.eld
