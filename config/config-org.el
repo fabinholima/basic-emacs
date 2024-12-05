@@ -17,9 +17,9 @@
   
   ;; Agenda files
   (org-agenda-files (list
-		     (expand-file-name "inbox.org" org-directory)
-		     (expand-file-name "gtd.org" org-directory)
-		     (expand-file-name "tickler.org" org-directory)))
+		     (expand-file-name "~/Nextcloud/Org/inbox.org" org-directory)
+		     (expand-file-name "~/Nextcloud/Org/gtd.org" org-directory)
+		     (expand-file-name "~/Nextcloud/Org/tickler.org" org-directory)))
   ;; Add UTF-8 Symbols
   (org-tag-alist '((:startgrouptag)
 		   (:grouptags)
@@ -57,6 +57,9 @@
   (org-tags-exclude-from-inheritance '("crypt"))
   (org-agenda-include-diary t)
 
+(setq org-todo-keywords '((sequence "☛ TODO(t)" "|" "<img draggable="false" role="img" class="emoji" alt="✔" src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/2714.svg"> DONE(d)")
+(sequence "⚑ WAITING(w)" "|")
+(sequence "|" "✘ CANCELED(c)")))
 
 (setq org-agenda-files '("~/Dropbox/Org/Agenda.org"))
 

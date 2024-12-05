@@ -78,16 +78,47 @@
   (olivetti-body-width 100)
   :hook (org-mode . olivetti-mode))
 
+; (use-package org-bullets
+;   :if (eq mine-appearance 'elegant)  
+;   :ensure t
+;   :after org
+;   :hook (org-mode . org-bullets-mode))
+
 (use-package org-bullets
-  :if (eq mine-appearance 'elegant)  
-  :ensure t
-  :after org
-  :hook (org-mode . org-bullets-mode))
+:ensure t
+:init
+(setq org-bullets-bullet-list
+'("◉" "◎" "⚫" "○" "►" "◇"))
+:config
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1))))
 
 (use-package custom
   :if (eq mine-appearance 'default)
   :config
   (set-frame-font "Hack-12")
   (load-theme 'adwaita))
+
+
+; (use-package centaur-tabs
+;   ;:ensure t 
+;   :init
+;   ;(setq centaur-tabs-enable-key-bindings t)
+;   :config
+;   (setq centaur-tabs-style "bar"
+;         centaur-tabs-height 32
+;         centaur-tabs-set-icons t
+;         centaur-tabs-show-new-tab-button t
+;         centaur-tabs-set-modified-marker t
+;         centaur-tabs-show-navigation-buttons t
+;         centaur-tabs-set-bar 'under
+;         centaur-tabs-show-count nil)
+;   (centaur-tabs-mode 1)
+;   )
+
+; (use-package awesome-tab
+;   ;:load-path "path/to/your/awesome-tab"
+;   :config
+;   (awesome-tab-mode t))
+
 
 (provide 'config-appearance)
