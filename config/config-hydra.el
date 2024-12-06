@@ -13,7 +13,7 @@
 
 
 
-(defhydra hydra-major (:color blue :columns 1)
+(defhydra hydra-major (:color blue :columns 5)
   "Latex"
   ("w" org-beamer-export-to-pdf "Beamer PDF")
   ("e" org-beamer-export-to-latex "Beamer")

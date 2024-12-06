@@ -8,7 +8,7 @@
    '("afde6368be6868e8e3dd53fad1ac51223d5484f9e6836496e7987802c9a9663d" "7fd8b914e340283c189980cd1883dbdef67080ad1a3a9cc3df864ca53bdc89cf" "a60b04e5c0fef30209f9576f04651938472b57cb1dae0375d80a53a78f515f69" default))
  '(epg-pinentry-mode 'loopback nil nil "Customized with use-package epa")
  '(package-selected-packages
-   '(centaur-tabs treemacs-icons-dired spacemacs-theme treemacs-projectile treemacs major-mode-hydra which-key typescript-mode smart-mode-line rust-mode poet-theme org-bullets olivetti ob-typescript ob-rust exwm exec-path-from-shell emms debbugs dashboard bbdb auctex all-the-icons-dired))
+   '(company hydra centaur-tabs treemacs-icons-dired spacemacs-theme treemacs-projectile treemacs major-mode-hydra which-key typescript-mode smart-mode-line rust-mode poet-theme org-bullets olivetti ob-typescript ob-rust exwm exec-path-from-shell emms debbugs dashboard bbdb auctex all-the-icons-dired))
  '(world-clock-list
    '(("Asia/Calcutta" "Bengaluru")
      ("America/New_York" "New York")
